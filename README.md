@@ -1,4 +1,4 @@
-# To-do-list
+# Ember To Do List
 
 This README outlines the details of collaborating on this Ember application.
 
