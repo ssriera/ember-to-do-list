@@ -1,7 +1,8 @@
 # To-do-list
 
 This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+
+![](http://g.recordit.co/0ys0SaojVc.gif)
 
 ## Prerequisites
 
