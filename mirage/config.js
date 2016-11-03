@@ -25,8 +25,7 @@ export default function() {
    */
 
 
-  this.get('/tasks', function(schema, request) {
-    console.log(request);
-    return schema.tasks.all();
-  });
+  this.get('/tasks');
+  this.post('/tasks');
+  this.delete('/tasks/:id');
 }

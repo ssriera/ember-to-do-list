@@ -6,7 +6,7 @@ export default Ember.Controller.extend({
       this.get('store').createRecord('task', {
         description,
         deadline
-      });
+      }).save();
     },
     showAll() {
 
@@ -20,7 +20,9 @@ export default Ember.Controller.extend({
     editTask() {
 
     },
-    delete() {
+    delete(task) {
+      task.deleteRecord();
+      task.save();
     }
   }
 });

@@ -20,14 +20,14 @@
 <br>
 <div class="container">
   <div class="list-group">
-    {{#each model as |tasks|}}
+    {{#each model as |task|}}
       <div class="list-group-item">
-        {{one-way-checkbox checked=tasks.isDone update=(action (mut tasks.isDone))}}
-        {{tasks.id}}
-        {{tasks.description}}
-        {{tasks.deadline}}
+        {{one-way-checkbox checked=task.isDone update=(action (mut task.isDone))}}
+        {{task.id}}
+        {{task.description}}
+        {{task.deadline}}
         <button class="btn btn-default pull-right"><span class="glyphicon glyphicon-pencil"></span> Edit</button>
-        <button class="btn btn-danger pull-right {{action 'delete' tasks}}"><span class="glyphicon glyphicon-minus"></span> Remove</button>
+        <button class="btn btn-danger pull-right" {{action 'delete' task}}><span class="glyphicon glyphicon-minus"></span> Remove</button>
       </div>
     {{/each}}
   </div>
