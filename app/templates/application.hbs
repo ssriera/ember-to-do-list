@@ -23,7 +23,7 @@
     {{#each completed as |task|}}
       <div class="row">
         <div class="list-group-item col-md-8">
-          {{one-way-checkbox checked=task.isDone update=(action (mut task.isDone))}}
+          {{one-way-checkbox checked=task.isDone update=(action 'toggleTask' task)}}
           {{task.id}}:
           {{task.description}}
           <span class="deadline pull-right"><strong>Due:</strong> {{task.deadline}}</span>

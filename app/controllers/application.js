@@ -52,6 +52,11 @@ export default Ember.Controller.extend({
     delete(task) {
       task.deleteRecord();
       task.save();
+    },
+    toggleTask(task) {
+      let isDone = task.get('isDone');
+      task.set('isDone', !isDone);
+      task.save();
     }
   }
 });

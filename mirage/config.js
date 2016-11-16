@@ -25,7 +25,5 @@ export default function() {
    */
 
 
-  this.get('/tasks');
-  this.post('/tasks');
-  this.delete('/tasks/:id');
+  this.resource('tasks');
 }
