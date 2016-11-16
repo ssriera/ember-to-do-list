@@ -13,21 +13,25 @@
 </div>
 <br>
 <div class="container">
-  <button class="btn btn-primary">All</button>
-  <button class="btn btn-primary">Complete</button>
-  <button class="btn btn-primary">Incomplete</button>
+  <button class="btn btn-primary" {{action 'showAll'}}>All</button>
+  <button class="btn btn-primary" {{action 'showCompleted'}}>Complete</button>
+  <button class="btn btn-primary" {{action 'showIncomplete'}}>Incomplete</button>
 </div>
 <br>
 <div class="container">
   <div class="list-group">
-    {{#each model as |task|}}
-      <div class="list-group-item">
-        {{one-way-checkbox checked=task.isDone update=(action (mut task.isDone))}}
-        {{task.id}}
-        {{task.description}}
-        {{task.deadline}}
-        <button class="btn btn-default pull-right"><span class="glyphicon glyphicon-pencil"></span> Edit</button>
-        <button class="btn btn-danger pull-right" {{action 'delete' task}}><span class="glyphicon glyphicon-minus"></span> Remove</button>
+    {{#each completed as |task|}}
+      <div class="row">
+        <div class="list-group-item col-md-8">
+          {{one-way-checkbox checked=task.isDone update=(action (mut task.isDone))}}
+          {{task.id}}:
+          {{task.description}}
+          <span class="deadline pull-right"><strong>Due:</strong> {{task.deadline}}</span>
+        </div>
+        <div class="col-md-4">
+          <button class="btn btn-default edit" {{action 'editTask' task}}><span class="glyphicon glyphicon-pencil"></span> Edit</button>
+          <button class="btn btn-danger remove" {{action 'delete' task}}><span class="glyphicon glyphicon-minus"></span> Remove</button>
+        </div>
       </div>
     {{/each}}
   </div>

@@ -37,3 +37,7 @@ body {
 div .list-group {
   max-width: 600px;
 }
+
+div .list-group-item {
+  max-width: 400px;
+}
