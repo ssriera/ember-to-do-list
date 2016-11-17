@@ -1,8 +1,11 @@
 # Ember To Do List
 
-This README outlines the details of collaborating on this Ember application.
+This is a simple CRUD Ember application that uses:
+[ember-cli-mirage](https://github.com/samselikoff/ember-cli-mirage)
+[ember-one-way-controls](https://github.com/DockYard/ember-one-way-controls)
+[ember-route-action-helper](https://github.com/DockYard/ember-route-action-helper)
 
-![](http://g.recordit.co/0ys0SaojVc.gif)
+![](http://g.recordit.co/pFBODgUpHK.gif)
 
 ## Prerequisites
 
