@@ -23,41 +23,21 @@ export default Ember.Controller.extend({
         return task.get('isDone') === false;
       });
     }
-
-    console.log('tasks');
     return tasks;
   }),
 
   actions: {
-    save(description, deadline) {
-      this.get('store').createRecord('task', {
-        description,
-        deadline
-      }).save();
-      this.transitionToRoute('application');
-    },
     showAll() {
       this.set('current', '');
     },
     showCompleted() {
       this.set('current', 'complete');
-      console.log('current');
     },
     showIncomplete() {
       this.set('current', 'incomplete');
-      console.log('current');
     },
     editTask(task) {
       this.transitionToRoute('edit', task.get('id'));
-    },
-    delete(task) {
-      task.deleteRecord();
-      task.save();
-    },
-    toggleTask(task) {
-      let isDone = task.get('isDone');
-      task.set('isDone', !isDone);
-      task.save();
     }
   }
 });

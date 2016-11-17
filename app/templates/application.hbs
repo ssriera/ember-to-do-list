@@ -5,7 +5,7 @@
     <div class="form-group">
       Due: {{input value=deadline}}
       Task description: {{input value=description}}
-      <button {{action 'save' description deadline}}class="btn btn-default" type="submit">
+      <button {{action (route-action 'save' description deadline)}}class="btn btn-default" type="submit">
         Add
       </button>
     </div>
@@ -23,14 +23,14 @@
     {{#each completed as |task|}}
       <div class="row">
         <div class="list-group-item col-md-8">
-          {{one-way-checkbox checked=task.isDone update=(action 'toggleTask' task)}}
+          {{one-way-checkbox checked=task.isDone update=(action (route-action 'toggleTask' task))}}
           {{task.id}}:
           {{task.description}}
           <span class="deadline pull-right"><strong>Due:</strong> {{task.deadline}}</span>
         </div>
         <div class="col-md-4">
           <button class="btn btn-default edit" {{action 'editTask' task}}><span class="glyphicon glyphicon-pencil"></span> Edit</button>
-          <button class="btn btn-danger remove" {{action 'delete' task}}><span class="glyphicon glyphicon-minus"></span> Remove</button>
+          <button class="btn btn-danger remove" {{action (route-action 'delete' task)}}><span class="glyphicon glyphicon-minus"></span> Remove</button>
         </div>
       </div>
     {{/each}}
