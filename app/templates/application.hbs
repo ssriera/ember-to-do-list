@@ -5,8 +5,8 @@
     <div class="form-group">
       Due: {{input value=deadline}}
       Task description: {{input value=description}}
-      <button {{action 'save' description deadline}}class="btn btn-success" type="submit">
-        <span class="glyphicon glyphicon-plus"></span>
+      <button {{action 'save' description deadline}}class="btn btn-default" type="submit">
+        Add
       </button>
     </div>
   </form>
@@ -34,5 +34,14 @@
         </div>
       </div>
     {{/each}}
+  </div>
+</div>
+
+<div class="container row">
+  <div class="col-md-6">
+    {{outlet}}
+  </div>
+  <div class="col-md-6">
+    <img class="zoey" src="../imgs/austin-zoey.png">
   </div>
 </div>

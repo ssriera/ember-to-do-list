@@ -34,6 +34,7 @@ export default Ember.Controller.extend({
         description,
         deadline
       }).save();
+      this.transitionToRoute('application');
     },
     showAll() {
       this.set('current', '');
@@ -46,8 +47,8 @@ export default Ember.Controller.extend({
       this.set('current', 'incomplete');
       console.log('current');
     },
-    editTask() {
-
+    editTask(task) {
+      this.transitionToRoute('edit', task.get('id'));
     },
     delete(task) {
       task.deleteRecord();

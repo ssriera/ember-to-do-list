@@ -6,7 +6,7 @@ const Router = Ember.Router.extend({
 });
 
 Router.map(function() {
-  this.route('/');
+  this.route('edit', {path: 'edit/:id'});
 });
 
 export default Router;
