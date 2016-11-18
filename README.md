@@ -4,8 +4,9 @@ This is a simple CRUD Ember application that uses:
 * [ember-cli-mirage](https://github.com/samselikoff/ember-cli-mirage)
 * [ember-one-way-controls](https://github.com/DockYard/ember-one-way-controls)
 * [ember-route-action-helper](https://github.com/DockYard/ember-route-action-helper)
+* [liquid-fire](https://github.com/ember-animation/liquid-fire)
 
-![](http://g.recordit.co/pFBODgUpHK.gif)
+![](http://g.recordit.co/kAgA95QFAO.gif)
 
 ## Prerequisites
 
