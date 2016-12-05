@@ -6,6 +6,8 @@ This is a simple CRUD Ember application that uses:
 * [ember-route-action-helper](https://github.com/DockYard/ember-route-action-helper)
 * [liquid-fire](https://github.com/ember-animation/liquid-fire)
 
+You can follow the tutorial [here](https://github.com/ssriera/ember-to-do-list/wiki/Tutorial).
+
 ![](http://g.recordit.co/kAgA95QFAO.gif)
 
 ## Prerequisites
