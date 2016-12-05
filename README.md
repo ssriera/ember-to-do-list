@@ -1,4 +1,4 @@
-# Ember To Do List :writing_hand_tone2: :notepad_spiral:
+# Ember To Do List :memo:
 
 This is a simple CRUD Ember application that uses:
 * [ember-cli-mirage](https://github.com/samselikoff/ember-cli-mirage)
