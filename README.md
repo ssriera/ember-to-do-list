@@ -1,4 +1,4 @@
-# Ember To Do List
+# Ember To Do List :writing_hand_tone2::notepad_spiral:
 
 This is a simple CRUD Ember application that uses:
 * [ember-cli-mirage](https://github.com/samselikoff/ember-cli-mirage)
@@ -55,3 +55,4 @@ Specify what it takes to deploy your app.
   * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
   * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
 
+If you have any comments, questions, or concerns you can reach out to me :unicorn: @stefriera in the twitterverse or email or file an issue but the other two would probably be faster.
